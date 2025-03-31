@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin: 0;
+        
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: #252728;
+        height: 3rem;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    position: sticky;
+        top: 0;
+        z-index: 0;
+        
+    }
+   
+    #logo {
+        font-size: 2.5rem;
+        color: #0866FF;
+        background-color: white;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    .search{
+        display: flex;
+            align-items: center;
+            background-color: #333334;
+            border-radius: 20px;
+            padding: 8px 15px;
+            width: 10vw; 
+            margin-left: 15px;
+    }
+    .search i{
+        color: #B0B3B8;
+    }
+    .search input{
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .icons{
+        display: flex;
+        gap: 20px;
+        font-size: 1.5rem;
+      
+    }
+    .icons a{
+        color: #B8BBBF;
+        text-decoration: none;
+        padding: 10px;
+        
+    }
+    .icon2{
+        display: flex;
+        gap: 20px;
+        font-size: 1.5rem;
+        margin-right: 10px;
+
+    }
+    .icon2 a{
+        color: #E5E8EB;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background-color: #4F5152;
+        align-content: center;
+        text-align: center;
+       
+    }
+    .main{
+        background-color: #1C1C1D;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    ul{
+        color: white;
+       list-style-type: none;
+      
+    }
+    li{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+       
+    }
+    li img{
+       height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        margin-right: 5%; 
+    }
+    li i{
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        margin-right: 5%; 
+    }
+    .post{
+        display: flex;
+        gap: 30px;
+    }
+    .post p{
+        color: white;
+    }
+    .left{
+        position: sticky;
+        left: 0;
+        z-index: 3;
+        width: 20vw;
+        overflow: auto;
+       scrollbar-width: none;
+       height: 100vh;
+       flex-wrap: wrap;
+    }
+    .center{
+        height: 100vh;
+       overflow: auto;
+       scrollbar-width: none;
+       width: 40vw;
+       flex-wrap: nowrap;
+    }
+    .right{
+        position: sticky;
+        right: 0;
+        z-index: 3;
+        height: 100vh;
+        width: 20vw; 
+        overflow: auto;
+       scrollbar-width: none;
+       flex-wrap: wrap;
+    }
+
+</style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- left section  -->
+             <div style="display: flex; align-items: center;">
+                <i id="logo" class="fa-brands fa-facebook"></i> 
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search Facebook">
+                </div>
+             </div>
+
+             <!-- center section  -->
+             <div class="icons">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-solid fa-store"></i></a>
+                <a href="#"><i class="fa-solid fa-user-group"></i></a>
+             </div>
+
+             <!-- left section  -->
+              <div class="icon2">
+                <a href="#"><i class="fa-solid fa-square"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+              </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <!-- left section  -->
+    <div class="left">
+        <ul>
+            <li ><img src="./image.JPG" alt="" > Smriti Khadgi</li>
+            <li ><i style="color: #0866FF;" class="fa-solid fa-user-group"></i> Friends</li>
+            <li><i style="color: #0866FF; " class="fa-solid fa-clock"></i>Memories</li>
+            <li><i style="color: blueviolet;" class="fa-solid fa-bookmark"></i>Saved</li>
+            <li><i style="color: #0866FF;" class="fa-solid fa-user-group"></i>Groups</li>
+            <li><i style="color: blueviolet;" class="fa-brands fa-youtube"></i>Video</li>
+            <li><i style="color: aquamarine;" class="fa-solid fa-table-columns"></i>Feeds</li>
+            <li><i style="color:blueviolet" class="fa-solid fa-shop"></i>Marketplace</li>
+            <li><i style="color:#4F5152" class="fa-solid fa-circle-chevron-down"></i>See More</li>
+            <hr style="color: #404245;">
+            <p>Your shortcuts</p></ul>
+            <ul>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">UI/UX Designer Community</li>
+               
+            </ul>
+        
+         </ul>
+    </div>
+      <!-- center section  -->
+       <div class="center">
+     <div style="background-color: #252728; margin-top: 20px; padding: 10px; border-radius: 20px;">
+        <div style="display: flex;  align-items: center;  ">
+            <img src="./image.JPG" height="50px" width="40px" style="border-radius: 50%;" alt="">
+            <div style="border-radius: 20px; background-color: #484849; height: 20px; padding: 10px; margin-left: 20px; width: 80%;">
+                <p style="color: white; align-items: center;">What's on your mind, Smriti?</p>
+            </div>
+        </div>
+        <hr style="color: #404245;">
+            <div class="post" style="padding: 10px; justify-content: space-between; flex-wrap: wrap;">
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: red;" class="fa-solid fa-video"></i>
+                    <p>Live Video</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: greenyellow;" class="fa-solid fa-photo-film"></i>
+                    <p>Photo/Video</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: yellow;" class="fa-solid fa-face-smile"></i>
+                    <p>Feeling/Activity</p>
+                </div>   
+        </div>
+     </div>
+     <div style="display: flex; margin-top: 10px; gap: 8px; ">
+  
+
+        <div style=" text-align: center;" >
+            <img src="./image.JPG" height="180px" style="border-radius: 10%;" alt="">
+            <i style="font-size: 1.5rem; color: white; background-color: #0866FF;  border-radius: 50%;" class="fa-solid fa-plus"></i>
+            <p style="text-align: center; color: white;">Create Story</p>
+        </div>
+        <div >
+            <img src="./image.JPG" height="200px"  style="border-radius: 10%;" alt="">
+            
+        </div>
+        <div >
+            <img src="./image.JPG" height="200px"  style="border-radius: 10%;" alt="">
+           
+        </div>
+        <div >
+            <img src="./image.JPG" height="200px"  style="border-radius: 10%;" alt="">
+      
+        </div>
+     </div>
+
+     <div style="margin-top: 10px; background-color: #252728; padding: 10px; border-radius: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 10px; color: white;">
+                <img src="./pp.jpg" height="40rem" style="border-radius: 50%;" alt="">
+                <p>Tasty</p>
+            </div>
+            <div style="display: flex; gap: 10px; color: #B0B3B8;">
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    
+        <div style="padding: 2%;">
+            <p style="color: white; text-align: start;">Who says cookware can't steal the spotlight? Shop the Tasty 16-Piece Cookware Set here</p>
+        </div>
+    
+        <div style="width: 100%;">
+            <img src="./content.jpg" style="width: 100%; height: auto; border-radius: 10px;" alt="">
+        </div>
+        <hr style="color: #404245;">
+
+        <div>
+            <div style="padding: 10px; display: flex; justify-content: space-around ; ">
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-thumbs-up"></i>
+                    <p style="color: #B8BBBF;">Live </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-comment"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i  style="color: #B8BBBF;" class="fa-solid fa-share"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>  
+        </div>
+    </div>
+    
+    
+
+    </div>
+     <div style="margin-top: 10px; background-color: #252728; padding: 10px; border-radius: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 10px; color: white;">
+                <img src="./pp.jpg" height="40rem" style="border-radius: 50%;" alt="">
+                <p>Tasty</p>
+            </div>
+            <div style="display: flex; gap: 10px; color: #B0B3B8;">
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    
+        <div style="padding-top: 2%;">
+            <p style="color: white; text-align: start;">Who says cookware can't steal the spotlight? Shop the Tasty 16-Piece Cookware Set here</p>
+        </div>
+    
+        <div style="width: 100%;">
+            <img src="./content.jpg" style="width: 100%; height: auto; border-radius: 10px;" alt="">
+        </div>
+        <hr style="color: #404245;">
+
+        <div>
+            <div style="padding: 10px; display: flex; justify-content: space-around ; ">
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-thumbs-up"></i>
+                    <p style="color: #B8BBBF;">Live </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-comment"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i  style="color: #B8BBBF;" class="fa-solid fa-share"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>  
+        </div>
+    </div>
+    
+    
+
+    </div>
+     <div style="margin-top: 10px; background-color: #252728; padding: 10px; border-radius: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 10px; color: white;">
+                <img src="./pp.jpg" height="40rem" style="border-radius: 50%;" alt="">
+                <p>Tasty</p>
+            </div>
+            <div style="display: flex; gap: 10px; color: #B0B3B8;">
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    
+        <div style="padding-top: 2%;">
+            <p style="color: white; text-align: start;">Who says cookware can't steal the spotlight? Shop the Tasty 16-Piece Cookware Set here</p>
+        </div>
+    
+        <div style="width: 100%;">
+            <img src="./content.jpg" style="width: 100%; height: auto; border-radius: 10px;" alt="">
+        </div>
+        <hr style="color: #404245;">
+
+        <div>
+            <div style="padding: 10px; display: flex; justify-content: space-around ; ">
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-thumbs-up"></i>
+                    <p style="color: #B8BBBF;">Live </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-comment"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i  style="color: #B8BBBF;" class="fa-solid fa-share"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>  
+        </div>
+    </div>
+    
+    
+
+    </div>
+     <div style="margin-top: 10px; background-color: #252728; padding: 10px; border-radius: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 10px; color: white;">
+                <img src="./pp.jpg" height="40rem" style="border-radius: 50%;" alt="">
+                <p>Tasty</p>
+            </div>
+            <div style="display: flex; gap: 10px; color: #B0B3B8;">
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    
+        <div style="padding-top: 2%;">
+            <p style="color: white; text-align: start;">Who says cookware can't steal the spotlight? Shop the Tasty 16-Piece Cookware Set here</p>
+        </div>
+    
+        <div style="width: 100%;">
+            <img src="./content.jpg" style="width: 100%; height: auto; border-radius: 10px;" alt="">
+        </div>
+        <hr style="color: #404245;">
+
+        <div>
+            <div style="padding: 10px; display: flex; justify-content: space-around ; ">
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-thumbs-up"></i>
+                    <p style="color: #B8BBBF;">Live </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-comment"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i  style="color: #B8BBBF;" class="fa-solid fa-share"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>  
+        </div>
+    </div>
+    
+    
+
+    </div>
+     <div style="margin-top: 10px; background-color: #252728; padding: 10px; border-radius: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 10px; color: white;">
+                <img src="./pp.jpg" height="40rem" style="border-radius: 50%;" alt="">
+                <p>Tasty</p>
+            </div>
+            <div style="display: flex; gap: 10px; color: #B0B3B8;">
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    
+        <div style="padding-top: 2%;">
+            <p style="color: white; text-align: start;">Who says cookware can't steal the spotlight? Shop the Tasty 16-Piece Cookware Set here</p>
+        </div>
+    
+        <div style="width: 100%;">
+            <img src="./content.jpg" style="width: 100%; height: auto; border-radius: 10px;" alt="">
+        </div>
+        <hr style="color: #404245;">
+
+        <div>
+            <div style="padding: 10px; display: flex; justify-content: space-around ; ">
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-thumbs-up"></i>
+                    <p style="color: #B8BBBF;">Live </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-comment"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i  style="color: #B8BBBF;" class="fa-solid fa-share"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>  
+        </div>
+    </div>
+    
+    
+
+    </div>
+     <div style="margin-top: 10px; background-color: #252728; padding: 10px; border-radius: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 10px; color: white;">
+                <img src="./pp.jpg" height="40rem" style="border-radius: 50%;" alt="">
+                <p>Tasty</p>
+            </div>
+            <div style="display: flex; gap: 10px; color: #B0B3B8;">
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    
+        <div style="padding-top: 2%;">
+            <p style="color: white; text-align: start;">Who says cookware can't steal the spotlight? Shop the Tasty 16-Piece Cookware Set here</p>
+        </div>
+    
+        <div style="width: 100%;">
+            <img src="./content.jpg" style="width: 100%; height: auto; border-radius: 10px;" alt="">
+        </div>
+        <hr style="color: #404245;">
+
+        <div>
+            <div style="padding: 10px; display: flex; justify-content: space-around ; ">
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-thumbs-up"></i>
+                    <p style="color: #B8BBBF;">Live </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i style="color: #B8BBBF;" class="fa-solid fa-comment"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <i  style="color: #B8BBBF;" class="fa-solid fa-share"></i>                    
+                    <p style="color: #B8BBBF;">Comment </p>
+                </div>  
+        </div>
+    </div>
+    
+    
+
+    </div>
+    </div>
+
+    <!-- right section  -->
+
+    <div class="right">
+        <div>
+            <div style="display: flex; gap: 20%; justify-content: space-between; margin-right: 10px; margin-top: 10%;">
+                <p style="color: #B0B3B8;">Friend request</p>
+                <a style="color: #0866FF;" href=""> See all</a>
+            </div>
+            <hr style="color: #404245; margin-top: 5%;">
+            <div style="padding: 10px; display: flex;  color: white;">
+                    <img src="./image.JPG"  width="40rem" height="45rem" style="border-radius: 50%; margin-right: 10%;" alt="">
+                    <div>
+              <p>Suma Khadgi</p>
+              <div style="display: flex; margin-top:5% ; gap: 10%;">
+              <button style="background-color: #0866FF; color: white; font-size: medium; border-radius: 5rem;">Confirm</button> 
+              <button style="background-color: #333334; color: white; font-size: medium; border-radius: 5rem;">Delete</button> 
+              
+            </div>
+            </div>
+               
+            </div>
+            <hr style="color: #404245; margin-top:5%;">
+            <p style="color: #B0B3B8; margin-top: 2%;">Birthdays</p>
+           <div style="display: flex; gap: 10%;">
+            <i style="color: #0866FF;" class="fa-solid fa-gift"></i>
+            <p style="color: #E5E8EB;">Prapti Joshi and 2 others have birthdays today</p>
+           </div>
+           <hr style="color: #404245; margin-top: 5%;">
+           <div style="margin-top: 5%; display: flex; justify-content: space-between;">
+             <p style="color: #B0B3B8;">Contacts</p>
+             <div style="color: #B0B3B8; gap: 10%; margin-right: 5%;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+             </div>
+
+            </div>
+            <ul>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Smaran Khadgi</li>
+               
+            </ul>
+
+            <hr style="color: #404245; margin-top: 5%;">
+
+            <p style="color: #B0B3B8; margin-top: 5%;">Community Chats</p>
+        <ul><li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Softwarica Colleg</li></ul>
+            <hr style="color: #404245; margin-top: 5%;">
+            <p style="color: #B0B3B8; margin-top:5%;">Group Chats</p>
+            <ul>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Family</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Family</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Family</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Family</li>
+                <li><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">Family</li>
+                
+            </ul>
+
+          
+
+
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    color: gold;
+    margin: 0;
+}
+/* body{
+    background-color: lightblue;
+} */
+
+.container{
+    background-color: lightblue;
+}
+.container:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+p:hover{
+    color: blueviolet;
+    font-size: 30px;
+}
+/* element selector*/
+p{
+    color: blue;
+}
+
+/* class selector */
+.hello{
+    color: blueviolet;
+}
+  /* id selector */
+#mern{
+    color: cadetblue;
+}
+ 
+/* grouping selector */
+table, th, tr,td ,h2{
+    border: 2px solid;
+}
+
+/* attribute selector */
+img[alt="image1"]{
+    height: 100px;
+    width: 100px;
+
+}
+img[alt="image2"]{
+    height: 50px;
+    width: 50px;
+
+}
+

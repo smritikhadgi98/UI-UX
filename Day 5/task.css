@@ -1,0 +1,55 @@
+table{
+
+    border: 2px ;
+   margin: auto;
+}
+
+
+img[alt=image1]{
+    height: 100px;
+    width: 100px;
+}
+
+img[alt=check]{
+    height: 20px;
+    width: 20px;
+}
+
+.table1{
+   
+    background-color:#fdc624
+}
+.table2{
+    background-color: #3dcad4;
+
+}
+.table3{
+    background-color: #3dacfc;
+}
+.table4{
+   background-color:  #939fb3
+}
+.para{
+    color: white;
+}
+.price{
+    font-size: 30px;
+    color: white;
+}
+.button{
+    background-color: transparent;
+    border: 2px solid;
+    border-color: white;
+    padding: 10px;
+    color: white;
+    margin-left: 35px;
+
+}
+#but{
+    background-color: white;
+    color: #3dacfc;
+    border-color: #3dacfc;
+    padding: 10px;
+    margin-left: 35px;
+}
+

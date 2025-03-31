@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        .box{
+            border: 4px solid red;
+            display: flex;
+            height: 50vh;
+            width: 50vw;
+            position: relative;
+           
+            
+        }
+        .minibox{
+            border: 2px solid;
+            height: 150px;
+            width: 150px;
+            font-size: 2rem;
+            text-align: center;
+            align-content: center;
+          
+        }
+
+        #static{
+            margin-top: 2rem;
+            background-color: green;
+            color: white;
+            position: static;
+        }
+        #relative{
+            background-color: lightcoral;
+            position: relative;
+            left: 2rem;
+        }
+        #absolute{
+            z-index: 2;
+            background-color: palevioletred;
+            position: absolute;
+            /* can't take bg space */
+            right: 0;
+        }
+        #fixed{
+           height: 50px;
+           width: 50px;
+           font-size: 2.5rem;
+           text-align: center;
+           align-content: center;
+           background-color: rgb(24, 164, 24);
+           border-radius: 50%;
+           color: white;
+           position: fixed;
+           bottom: 2rem;
+           left: 2rem;
+        }
+
+        nav{
+            height: 75px;
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 3;
+
+            
+        }
+        ul{
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            width: 50%;
+            box-shadow: 2px 2px 2px 2px gray;
+            padding-left: 5px;
+            
+      }
+        
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+
+    </ul>
+  </nav>
+  <h1>CSS Position  </h1>
+        <ol>
+            <li>Static=>Default position, cannot use top, bottom, left, right properties</li>
+            <li>Relative=> Relaive to its normal position, cannot affect other element</li>
+            <li>Absolute=> Relative to nearest parent position</li>
+            <li>Fixed=> Relative to the viewport</li>
+            <li>Sticky=> when you scroll the page</li>
+        </ol>
+  <div class="box">
+    <div class="minibox" id="static">Static</div>
+    <div class="minibox" id="relative">Relative</div>
+    <div class="minibox" id="absolute">Absolute</div>
+    <div class="minibox" id="sticky">Stick</div>
+  </div>
+  <div  id="fixed"><i class="fa-brands fa-whatsapp"></i></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure omnis deleniti ab explicabo est voluptate, sapiente pariatur minima? Nostrum necessitatibus excepturi rerum magnam est numquam nam itaque ducimus aperiam?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure omnis deleniti ab explicabo est voluptate, sapiente pariatur minima? Nostrum necessitatibus excepturi rerum magnam est numquam nam itaque ducimus aperiam?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure omnis deleniti ab explicabo est voluptate, sapiente pariatur minima? Nostrum necessitatibus excepturi rerum magnam est numquam nam itaque ducimus aperiam?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure omnis deleniti ab explicabo est voluptate, sapiente pariatur minima? Nostrum necessitatibus excepturi rerum magnam est numquam nam itaque ducimus aperiam?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure omnis deleniti ab explicabo est voluptate, sapiente pariatur minima? Nostrum necessitatibus excepturi rerum magnam est numquam nam itaque ducimus aperiam?</p>
+
+</body>
+</html>
