@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Winky+Sans:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src:
+        url('../Regards-Font/regards.otf') format('opentype'),
+        url('../Regards-Font/regards.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body{
+    background-color:#F0D09A ;
+    color: #F0D09A;
+    font-family: 'MyCustomFont', sans-serif;
+
+
+}
+nav{
+    margin: 0 2rem;
+    flex-wrap: wrap;
+}
+nav,ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 5px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+    
+}
+ul{
+    list-style-type: none;
+    column-gap: 1rem;
+}
+
+.box{
+   background-color:#FAEFDD ;
+   margin: 0 2rem;
+   height: fit-content;
+   display: grid;
+   justify-items: center;
+   flex-wrap: wrap;
+   border: 2px solid gray;
+
+
+    
+}
+.container{
+   color: black;
+   font-size: 4rem;
+   flex-wrap: wrap;
+ margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 80%;
+  
+
+   
+
+}
+
+.inner-container{
+  color: black;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 30vh;
+
+}
+.box2{
+    background-color: #322B26;
+    margin: 0 2rem;
+   height: 80vh;
+   display: grid;
+   justify-items: center;
+   flex-wrap: wrap;
+   border: 2px solid gray;
+   width: 100%;
+   height: fit-content;
+}
+.border{
+    border: 2px solid gray;
+   width: 90%;
+    margin: 2rem;
+   display: grid;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
+    height: 40vh;
+}
+.work{
+    border: 2px solid gray;
+    width: 30%;
+}
+
+h1{
+    margin-left: 10rem;
+}
