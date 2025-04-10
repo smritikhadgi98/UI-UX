@@ -12,102 +12,222 @@
 
 
 
-body{
-    background-color:#F0D09A ;
+body {
+    background-color: #F0D09A;
     color: #F0D09A;
     font-family: 'MyCustomFont', sans-serif;
 
 
+
 }
-nav{
+
+nav {
     margin: 0 2rem;
     flex-wrap: wrap;
+
 }
-nav,ul{
+
+nav,
+ul {
     display: flex;
     justify-content: space-around;
     background-color: black;
     padding: 5px 0;
     align-items: center;
     flex-wrap: wrap;
-    
+    color: #FAEFDD;
 
-    
+
+
+
 }
-ul{
+
+ul {
     list-style-type: none;
     column-gap: 1rem;
 }
 
-.box{
-   background-color:#FAEFDD ;
-   margin: 0 2rem;
-   height: fit-content;
-   display: grid;
-   justify-items: center;
-   flex-wrap: wrap;
-   border: 2px solid gray;
-
-
-    
-}
-.container{
-   color: black;
-   font-size: 4rem;
-   flex-wrap: wrap;
- margin-top: 2rem;
-  display: grid;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 50vw;
-  height: 80%;
-  
-
-   
-
-}
-
-.inner-container{
-  color: black;
-  font-size: 1rem;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  height: 30vh;
-
-}
-.box2{
-    background-color: #322B26;
+.box {
+    background-color: #FAEFDD;
     margin: 0 2rem;
-   height: 80vh;
-   display: grid;
-   justify-items: center;
-   flex-wrap: wrap;
-   border: 2px solid gray;
-   width: 100%;
-   height: fit-content;
-}
-.border{
+    height: fit-content;
+    /* display: grid; */
+    justify-items: center;
+    flex-wrap: wrap;
     border: 2px solid gray;
-   width: 90%;
-    margin: 2rem;
-   display: grid;
+    overflow: hidden;
+    position: relative;
 }
 
-.row{
+
+.orbit1 {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+
+
+}
+
+.orbit2 {
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+}
+
+.orbit1 img {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; ; */
+
+    animation: rotateorbit1 10s infinite linear;
+
+}
+
+@keyframes rotateorbit1 {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.orbit2 img {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; ; */
+
+    animation: rotateorbit2 10s infinite linear;
+}
+
+@keyframes rotateorbit2 {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+
+}
+
+.intro {
+    background-color: #FAEFDD;
+    margin: 0 2rem;
+    height: fit-content;
+    display: grid;
+    justify-items: center;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+    overflow: hidden;
+    padding: 5rem;
+    background-image: url("https://owltastic.com/img/bg-owl-moon-flipped.webp");
+    background-size: 18%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.container {
+    color: black;
+    font-size: 4rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 80%;
+
+
+}
+
+a {
+    justify-content: start;
+    color: black;
+}
+
+.inner-container {
+    color: black;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 40vw;
+    height: 30vh;
+
+}
+
+.inner-port {
+    color: black;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50%;
+    margin-left: 20rem;
+    color: #DED4C6;
+
+
+}
+
+#port {
+    color: #DED4C6;
+}
+
+.box2 {
+    background-image: url("https://owltastic.com/img/bg-star-chart-alt.webp");
+    margin: 0 2rem;
+    height: 80vh;
+    display: grid;
+    justify-items: center;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+    height: fit-content;
+    opacity: 70%;
+
+
+}
+
+.border {
+    border: 2px solid gray;
+    width: 90%;
+    margin: 2rem;
+    display: grid;
+    padding: 3em;
+}
+
+.row {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     margin: 1rem;
-    height: 40vh;
-}
-.work{
-    border: 2px solid gray;
-    width: 30%;
+    height: 50vh;
+
 }
 
-h1{
+.work {
+    border: 2px solid gray;
+    width: 30%;
+    height: 250px;
+    overflow: scroll;
+    background-color: black;
+    scrollbar-width: none;
+    align-items: center;
+    padding: 30px;
+    opacity: 100%;
+
+}
+
+.work img {
+    filter: grayscale();
+    transition: transform 10s ease;
+}
+
+.work:hover img {
+    transform: translateY(-65%);
+    filter: grayscale(0%);
+}
+
+h1 {
     margin-left: 10rem;
 }
